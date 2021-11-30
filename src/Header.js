@@ -5,21 +5,28 @@ import SearchIcon from '@mui/icons-material/Search';
 
 function Header() {
     return (
+        // CONTAINER: Header
         <div className='header'>
-            {/* Header Logo on the left */}
-            <img
+            {/* SECTION 01: Header Start */}
+            <div className='header__start'>
+                {/* Header Logo */}
+                <img
                 className='header__logo'
                 src={header_logo} />
-            {/* Header Searchbar in the middle */}
+            </div>
+
+            {/* SECTION 02: Header Search */}
             <div className="header__search">
+                {/* Search Bar */}
                 <input
                     className="header__searchInput"
                     type="text" />
-                {/* Searchbar logo on the right of searchbar */}
+                {/* Search Icon */}
                 <SearchIcon className="header__searchIcon" />
             </div>
-            {/* Header navigation on the right */}
-            <div className="header__nav">
+
+            {/* SECTION 03: Header Navigation */}
+            <div className="header__navigation">
                 {/* Option 01 */}
                 <div className="header__option">
                     <span className="header__optionLineOne">
@@ -29,6 +36,7 @@ function Header() {
                         Sign In
                     </span>
                 </div>
+
                 {/* Option 02 */}
                 <div className="header__option">
                     <span className="header__optionLineOne">
@@ -38,6 +46,7 @@ function Header() {
                         & Orders
                     </span>
                 </div>
+
                 {/* Option 03 */}
                 <div className="header__option">
                     <span className="header__optionLineOne">
