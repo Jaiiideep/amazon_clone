@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     padding: 2rem;
-    margin: 0.5rem;
+    margin: 2rem;
     max-height: 30rem;
     align-items: center;
     flex-direction: column;
@@ -30,6 +30,8 @@
 
 .product > button {
     border: 0.1rem solid;
+    height: 2rem;
+    width: 6rem;
     margin: 1rem 0 0 0;
     border-color: #111;
     background: #f0c14b;

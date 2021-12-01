@@ -81,6 +81,7 @@
 
 .header__option {
     display: flex;
+    color: white;
     flex-direction: column;
 }
 
