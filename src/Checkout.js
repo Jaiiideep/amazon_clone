@@ -1,15 +1,21 @@
+import './Checkout.css';
 import React from 'react';
 import Subtotal from './Subtotal';
-import './Checkout.css';
+import { useStateValue } from './StateProvider';
 
 function Checkout() {
+    const [{ basket }, dispatch] = useStateValue();
+
     return (
         <div className="checkout">
             <div className="checkout__left">
                 <div>
                     <h2 className="checkout__title">
-                        Your shopping basket
+                        Your Shopping Basket
                     </h2>
+                </div>
+                <div className="checkout__item">
+                    
                 </div>
             </div>
             <div className="checkout__right">

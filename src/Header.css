@@ -93,9 +93,10 @@
     font-weight: 800;
 }
 
-.headet__optionBasket {
+.header__optionBasket {
     display: flex;
     color: white;
+    align-items: center;
 }
 
 .header__basketCount {
