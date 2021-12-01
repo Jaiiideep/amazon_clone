@@ -2,18 +2,24 @@ import './Header.css';
 import React from 'react';
 import header_logo from './images/header_logo.png';
 import SearchIcon from '@mui/icons-material/Search';
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import { Link } from 'react-router-dom';
+
 
 function Header() {
     return (
         // CONTAINER: Header
         <div className='header'>
-            {/* SECTION 01: Header Start */}
-            <div className='header__start'>
-                {/* Header Logo */}
-                <img
-                className='header__logo'
-                src={header_logo} />
-            </div>
+            <Link to="/">
+                {/* SECTION 01: Header Start */}
+                <div className='header__start'>
+                    {/* Header Logo */}
+                    <img
+                        className='header__logo'
+                        src={header_logo}
+                        alt="Header Logo" />
+                </div>
+            </Link>
 
             {/* SECTION 02: Header Search */}
             <div className="header__search">
@@ -56,6 +62,16 @@ function Header() {
                         Prime
                     </span>
                 </div>
+
+                {/* Option 04 */}
+                <Link to="/checkout">
+                    <div className="header__optionBasket">
+                        <ShoppingBasketIcon />
+                        <span className="header__optionLineTwo header__basketCount">
+                            0
+                        </span>
+                    </div>
+                </Link>
             </div>
         </div>
     )
